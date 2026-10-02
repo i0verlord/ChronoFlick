@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export type ThemeName = 'Cyberpunk Yellow' | 'Matrix Green' | 'Dark' | 'Light';
+export type ThemeName = 'Cyberpunk Yellow' | 'Matrix Green' | 'Light';
 
 export interface ThemeColors {
   background: string;
@@ -12,8 +12,8 @@ export interface ThemeColors {
 export const themes: Record<ThemeName, ThemeColors> = {
   'Cyberpunk Yellow': { background: '#0d0d0d', text: '#fce205', shadow: 'rgba(252, 226, 5, 0.7)' },
   'Matrix Green': { background: '#000000', text: '#00ff41', shadow: 'rgba(0, 255, 65, 0.7)' },
-  'Dark': { background: '#121212', text: '#ffffff', shadow: 'rgba(255, 255, 255, 0.5)' },
-  'Light': { background: '#f5f5f5', text: '#333333', shadow: 'rgba(51, 51, 51, 0.3)' },
+  'Light': { background: '#121212', text: '#ffffff', shadow: 'rgba(255, 255, 255, 0.5)' },
+  //  'Dark': { background: '#f5f5f5', text: '#333333', shadow: 'rgba(51, 51, 51, 0.3)' },
 };
 
 interface SettingsContextType {
@@ -26,9 +26,9 @@ interface SettingsContextType {
 
 export const SettingsContext = createContext<SettingsContextType>({
   is24Hour: false,
-  setIs24Hour: () => {},
+  setIs24Hour: () => { },
   themeName: 'Cyberpunk Yellow',
-  setThemeName: () => {},
+  setThemeName: () => { },
   colors: themes['Cyberpunk Yellow'],
 });
 
