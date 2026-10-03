@@ -28,7 +28,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed along with the Expo 
 
 ### Installation
 
-1. **Clone the repository** (if you haven't already):
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/ChronoFlick.git
    cd ChronoFlick/chronoflip
